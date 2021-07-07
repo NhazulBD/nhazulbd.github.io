@@ -1,0 +1,31 @@
+/* ROBOTO */
+@font-face {
+  font-family: 'Roboto';
+  src: url(Roboto.ttf);
+  src: local(?), 
+  url(Roboto.ttf) format("truetype");
+}
+
+/* TITILLIUM */
+@font-face {
+  font-family: 'Titillium';
+  src: url(Titillium.ttf);
+  src: local(?), 
+  url(Titillium.ttf) format("truetype");
+}
+
+/*Akhand*/
+@font-face {
+  font-family: 'Akhand';
+  src: url(Akhand.otf);
+  src: local(?), 
+  url(Akhand.otf) format("opentype");
+}
+
+/*UBUNTU*/
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(Ubuntu.ttf);
+  src: local(?), 
+  url(Ubuntu.ttf) format("truetype");
+}

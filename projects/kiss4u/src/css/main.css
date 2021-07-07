@@ -1,0 +1,25 @@
+/*
+[CSS Index - main]
+
+---
+
+Author:   RZ
+*/
+
+/*
+*/
+/**********************************Content-Start**********************************/
+.card {
+    background: rgba(30,30,30,.5);
+    border: 1px solid #272727;
+}
+.card .text-muted {
+    color: #cb218e!important;
+    font-size: 0.8125rem;
+    font-weight: 400;
+}
+.card-footer.text-center {
+    color: rgb(214, 214, 214);
+    font-size: 0.8125rem;
+}
+/**********************************Content-End**********************************/

@@ -1,0 +1,148 @@
+<div class="modal fade" id="form-accModal" tabindex="-1" role="dialog" aria-labelledby="form-accLabel" aria-hidden="true">
+                
+    <div class="modal-dialog" role="document">
+        <div id="frm-modal-content" class="modal-content">
+            <div class="modal-body">
+                <ul id="form-pill" class="nav md-pills nav-justified pills-info">
+                    <li class="nav-item">
+                        <a id="pill-singin" class="pill-btn nav-link border border-custom border-rounded show" data-toggle="tab" href="#tab-singin" role="tab">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="pill-singup" class="pill-btn nav-link border border-custom border-rounded show" data-toggle="tab" href="#tab-singup" role="tab">Register</a>
+                    </li>
+                </ul>
+                <div class="tab-content py-0">
+                    <!-- modal singin start -->
+                    <div class="tab-pane-frm tab-pane fade in" id="tab-singin" role="tabpanel">
+                        <form id="login" class="text-center mt-3">
+                            <div class="md-form">
+                                <input type="email" id="username" class="form-control" name="username" >
+                                <label for="username">E-mail or Username</label>
+                            </div>
+                            <br>
+                            <div class="md-form mt-2">
+                                <input type="password" id="password" class="form-control" name="password" >
+                                <label for="password">Password</label>
+                            </div>
+                            <div class="mt-5">
+                                <a href="./lost-password.html" class="btn btn-outline-custom btn-md mb-4 waves-effect waves-light" type="submit">Forgot password?</a>
+                                <a href="./profile-afiliate.html" class="btn btn-custom btn-md mb-4 waves-effect waves-light">Login</a>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- modal singin end -->
+                    <!-- modal singup start -->
+                    <div class="tab-pane-frm tab-pane fade in" id="tab-singup" role="tabpanel">
+                        <ul class="nav md-pills w-100 super-center">
+                            <li class="nav-item">
+                                <a id="atab1" class="btn-floating btn-sm btn-custom lock" data-toggle="tab" href="#payment1" role="tab"><i>1</i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn-floating btn-sm btn-custom lock" data-toggle="tab" href="#payment2" role="tab"><i>2</i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn-floating btn-sm btn-custom lock" data-toggle="tab" href="#pdata" role="tab"><i>3</i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn-floating btn-sm btn-custom lock" data-toggle="tab" href="#finish" role="tab"><i>4</i></a>
+                            </li>
+                        </ul>
+                        <form id="register" class="text-center mt-3 w-100">
+                            <div class="tab-content pt-0">
+                        
+                                <!--Payment Panel 1-->
+                                <div class="tab-pane fade in show active w-100" id="payment1" role="tabpanel">
+                                    <h2>Payment Method</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
+                                        reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
+                                        porro voluptate odit minima.</p>
+                                    <br>
+                                </div>
+                                <!--/.Payment Panel 1-->
+                                    
+                                <!--Payment Panel 2-->
+                                <div class="tab-pane fade w-100" id="payment2" role="tabpanel">
+                                    <h2>Payment Method</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
+                                    reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
+                                    porro voluptate odit minima.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
+                                    reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
+                                    porro voluptate odit minima.</p>
+                                    <br>
+                                </div>
+                                <!--/.Payment Panel 2-->
+                        
+                                <!--Data Panel-->
+                                <div class="tab-pane fade w-100" id="pdata" role="tabpanel">
+                                    <h2>Personal Data</h2>
+                                    <div class="md-form my-2">
+                                        <input type="email" id="signonname" class="form-control" name="signonname" >
+                                        <label for="signonname">Name</label>
+                                    </div>
+                                    <br>
+                                    <div class="md-form my-2">
+                                        <input type="email" id="signonusername" class="form-control" name="signonusername" >
+                                        <label for="signonusername">Username</label>
+                                    </div>
+                                    <br>
+                                    <div class="md-form my-2">
+                                        <input type="email" id="email" class="form-control" name="email" >
+                                        <label for="email">E-mail</label>
+                                    </div>
+                                    <br>
+                                    <div class="md-form my-2">
+                                        <input type="password" id="signonpassword" class="form-control" name="signonpassword" >
+                                        <label for="signonpassword">Password</label>
+                                    </div>
+                                    <br>
+                                    <div class="md-form my-2">
+                                        <input type="password" id="signonpassword2" class="form-control" name="signonpassword2" >
+                                        <label for="signonpassword2">Repeat Password</label>
+                                    </div>
+                                    <br>
+                                </div>
+                                <!--/.Data Panel-->
+
+                                <!--Finish Panel-->
+                                <div class="tab-pane fade text-center w-100" id="finish" role="tabpanel">
+                                    <h2>Finish</h2>
+                                    <div>
+                                        <p class="small grey-text">
+                                            By signing up you agree to data processing by the administrator: StartFlow s.c. located in Kijska 9, Wsaw. The administrator processes data following the <a style="color: #cb218e!important;"  target="_blank" href="./privacy-policy.html">Privacy Policy</a>.
+                                        </p>
+                                    </div>
+                                    <div class="mt-1">
+                                        <a class="btn btn-custom btn-md mb-4 waves-effect waves-light" href="./profile-afiliate.html">Join Now</a>
+                                    </div>
+                                </div>
+                                <!--/.Finish Panel-->
+                            
+                            </div>
+                        </form>
+                    <!-- modal singup end -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-custom btn-md waves-effect waves-light" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal fade" id="form-modelModal" tabindex="-1" role="dialog" aria-labelledby="form-modelLabel" aria-hidden="true">
+                
+    <div class="modal-dialog" role="document">
+        <div id="frm-modal-content" class="modal-content">
+            <div class="modal-body">
+                <a href="./profile-model.html" class="btn btn-custom btn-md mb-4 waves-effect waves-light">Join Now</a>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-custom btn-md waves-effect waves-light" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

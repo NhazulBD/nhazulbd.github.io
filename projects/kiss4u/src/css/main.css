@@ -15,11 +15,19 @@ Author:   RZ
 }
 .card .text-muted {
     color: #cb218e!important;
-    font-size: 0.8125rem;
+    font-size: 0.9rem;
     font-weight: 400;
 }
 .card-footer.text-center {
     color: rgb(214, 214, 214);
     font-size: 0.8125rem;
+}
+.fa-status.active:before {
+    content: "\f832";
+    color: green!important;
+}
+.fa-status.inactive:before {
+    content: "\f833";
+    color: rgb(177, 41, 41)!important;
 }
 /**********************************Content-End**********************************/

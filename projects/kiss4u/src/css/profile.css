@@ -63,6 +63,10 @@ ul.striped li {
 #menu_container {
     transition: all .25s ease;
 }
+.chat-room img.avatar {
+    height: 3rem;
+    width: 3rem;
+}
 /**********************************Content-End**********************************/
 /**********************************Responsive-Start**********************************/
 @media (max-width: 450px) {

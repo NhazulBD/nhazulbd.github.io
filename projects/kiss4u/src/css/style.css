@@ -123,10 +123,10 @@ Author:   RZ
 .form-control {
     color: #bbc0c6!important;
 }
-#register h2 {
+.modal-dialog form h2 {
     color: #fff;
 }
-#register p {
+.modal-dialog form p {
     color: #9e9e9e!important;
 }
 .md-pills li {

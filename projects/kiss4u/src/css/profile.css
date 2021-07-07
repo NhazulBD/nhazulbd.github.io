@@ -42,7 +42,7 @@ ul.striped li {
     font-weight: bold;
     background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%)!important;
 }
-.tab-content {
+.tab-content.custom-scroll {
     background: #272727;
     max-height: 25rem;
 }

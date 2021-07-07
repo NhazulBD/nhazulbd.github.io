@@ -83,10 +83,17 @@ $(function() {
       $("#sidebar #side-menu .menu-item .collapsible-header.arrow-r").addClass("active");
     });
 
-    $("#tab-singup .nav a.lock").click(function (){
-      $("#tab-singup .nav a.btn-custom").addClass("lock");
+    $(".ul-tabs.nav a.lock").click(function (){
+      $(".ul-tabs.nav a.btn-custom").addClass("lock");
       $(this).removeClass("lock");
     });
-    $("#atab1").removeClass("lock");
-
-});
+    $("#atab1, #atabModel1").removeClass("lock");
+    
+    $("#form-accModal, #form-modelModal").on('hidden.bs.modal', function(){
+      $(".ul-tabs.nav a.btn-custom").addClass("lock");
+      $("#atab1, #atabModel1").addClass("btn-custom");
+      $("#atab1, #atabModel1").removeClass("lock");
+      $(".tab-pane.fade.w-100").removeClass("in show active");
+      $("#payment1, #model1").addClass("in show active");
+    });
+}); 

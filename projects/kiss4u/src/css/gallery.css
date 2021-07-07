@@ -1,0 +1,177 @@
+/*
+[CSS Index - Gallery]
+
+---
+
+Author:   RZ
+*/
+
+/*
+*/
+/**********************************Content-Start**********************************/
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%; 
+}
+.gallery .mb-3 {
+    position: relative;
+    cursor: pointer;
+}
+
+.premium {
+    cursor: pointer;
+    height: 65px;
+    opacity: 0.5;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 65px;
+    z-index: 5;
+    pointer-events: none !important;
+}
+.premium::after {
+    backface-visibility: hidden;
+    background: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+    box-shadow: rgb(80 0 0 / 40%) 0px 1px 2px 0px, rgb(255 255 255 / 60%) 0px 1px 1px 0px inset;
+    color: rgb(255,255,255);
+    content: attr(data-title);
+    display: block;
+    filter: opacity(1);
+    font: bold 10px / 26px arial;
+    height: 26px;
+    position: absolute;
+    right: -23px;
+    text-align: center;
+    text-shadow: rgb(255 255 255 / 40%) 0px 1px 0px;
+    text-transform: uppercase;
+    top: 10px;
+    transform: rotate(45deg);
+    width: 93px;
+}
+.image-wrapper {
+    background-color: rgb(96, 62, 60) !important;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.image-cover {
+    display: block;
+    height: 100%;
+    width: 100%;
+    filter: blur(20px);
+}
+.image-cover img.img-fluid {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.image-content {
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(147, 0, 0, 0.6);
+}
+.unlock-container {
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+.unlock-symbol {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s ease 0s;
+    width: 75%;
+}
+.unlock-symbol svg {
+    opacity: 0.8;
+    backface-visibility: hidden;
+    font-size: 72px;
+    position: relative;
+    transform: scale(1);
+    transform-origin: center -80%;
+    transition: transform ease 0.2s;
+    display: inline-block;
+    fill: #fff;
+    height: 1em;
+    stroke: #fff;
+    stroke-width: 0;
+    width: 1em;
+    text-align: center
+}
+.gallery .mb-3:hover .unlock-symbol svg {
+    transform: scale(.65);
+}
+.popover-wrapper {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    display: block;
+    height: 60px;
+}
+.popover-target {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.popover-unlock {
+    transform: translate(-50%, -50%) rotateY(90deg);
+    left: 50%;
+    margin: 10px 0px 0px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.popover-unlock a.btn-custom {
+    transition: opacity ease 0.5s;
+    opacity: 0;
+}
+.gallery .mb-3:hover .popover-unlock a.btn-custom {
+    opacity: 1;
+}
+
+/**********************************Content-End**********************************/
+
+/**********************************Responsive-Start**********************************/
+@media (max-width: 450px) {
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    #gallery.active {
+        margin-right: -15em!important;
+    }
+    #sidebar {
+        margin-left: -15em;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+/**********************************Responsive-End**********************************/

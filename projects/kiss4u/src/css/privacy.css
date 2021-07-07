@@ -1,0 +1,44 @@
+/*
+[CSS Index - privacy]
+
+---
+
+Author:   RZ
+*/
+
+/*
+*/
+/**********************************Content-Start**********************************/
+ol, ul {
+    padding-left: 2rem;
+}
+#rz-intro {
+    background-color: rgba(0,0,0,.2);
+    color: #c7c7c7;
+    padding-left: 240px;
+}
+.fw-bold {
+    font-weight: 700!important;
+}
+.rz-docs-layout {
+    padding-left: 240px;
+}
+.container.px-lg-5{
+    color: #c7c7c7;
+}
+.container.px-lg-5 strong{
+    color: #e4e4e4;
+}
+
+@media (max-width: 1439px) {
+    #rz-intro {
+        padding-left: 0;
+    }
+}
+@media (max-width: 1440px){
+    .rz-docs-layout {
+        padding-left: 0px;
+    }
+}
+/**********************************Content-End**********************************/
+

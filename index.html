@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Pedro Ramos || Diseñador & Desarrollador Front-end</title>
+    <meta content="Pedro Ramos" name="author">
+    <!-- <meta content="" name="keywords"> -->
+    <meta content="Using design as a gateway to translate problems into opportunities. Building digital experiences for startups and brands." name="description">
+    <meta content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <!-- Favicon -->
+    <link href="recursos/img/logos/favicon.png" rel="shortcut icon" type="image/x-icon">   
+    <!-- style start -->
+    <link href="recursos/plugs/plugins.css" media="all" rel="stylesheet" type="text/css">
+    <link href="recursos/plugs/photoswipe.css" media="all" rel="stylesheet" type="text/css">
+    <link href="recursos/plugs/default-skin.css" media="all" rel="stylesheet" type="text/css">
+    <link href="recursos/css/style.css" media="all" rel="stylesheet" type="text/css">
+    <!-- style end -->
+    <!-- fonts start -->
+    <link href="recursos/fonts/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css">
+    <link href="recursos/fonts/raleway/fonts.css" rel="stylesheet" type="text/css">
+    <link href="recursos/fonts/icomoon/icomoon.css" rel="stylesheet" type="text/css">
+    <link href="recursos/fonts/icomoon/icomoon_porto.css" rel="stylesheet" type="text/css">
+    <!-- fonts end -->
+</head>
+
+<body>
+    <!-- Preloader start -->
+    <div id="preloader" class="h-100 w-100">
+        <div class="preloader menu-item">
+            <div id="anim">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="80.8142mm" height="80.9857mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 7403.98 7419.7" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                        <style type="text/css">
+                            <![CDATA[
+                                .str0 {stroke:#fff;stroke-width:18.32;stroke-miterlimit:22.9256}
+                                .fil0 {fill:transparent}
+                            ]]>
+                        </style>
+                    </defs>
+                    <g id="Capa_x0020_1">
+                        <metadata id="CorelCorpID_0Corel-Layer"/>
+                        <path class="fil0 str0 path" d="M3891.62 4110.35l-43.1 41.15 0 179.4 1299.59 0 1290.97 0 -2740.35 2740.32 -3398.37 -3350.5 224.3 -209.03 -318.78 0 -193.18 209.03 3686.03 3686.03 3296.45 -3296.45 -1852.58 0.05 -912.27 0 186.85 0 -186.85 0 912.27 -847.87 0 -156.46 -1294.09 0.03 0 198.16 887.28 0 -844.18 806.15zm2953.16 -185.15l335.51 0 210.65 -204.49 -3700.39 -3707.75 -3313.6 3313.62 2152.57 0 808.42 0c101.98,0 153,44.13 153,132.46l0 106.02c0,88.33 -51.02,132.52 -153,132.52l-808.42 0 0 -238.53 -231.23 0 0 897.97 231.23 0 0 -447.47 546.11 0 368.58 448.24 264 0 -349.02 -439.42c108.96,-12.21 247.06,-62.15 293.41,-123.99 46.36,-61.81 69.54,-138.95 69.54,-231.36l0 -101.91c0,-51.62 -6.95,-98.54 -20.86,-140.66 -13.91,-42.13 -36.22,-78.49 -66.94,-109.04 -30.7,-30.6 -70.41,-54.4 -119.08,-71.38 -48.68,-16.94 -107.8,-25.47 -177.33,-25.47l-1039.66 0 -1374.88 0 8.56 -8.52 2766.78 -2759.91 3355.47 3374.58 -209.43 204.49z"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div id="background_color"></div>
+    </div>
+    <!-- Preloader end -->
+
+    <!-- borders start -->
+    <div class="the-borders border-top top-position-tertiary"></div>
+    <div class="the-borders border-left left-position-tertiary"></div>
+    <div class="the-borders border-right right-position-tertiary"></div>
+    <div class="the-borders border-bottom bottom-position-tertiary"></div>
+    <canvas class="bottom-position-tertiary" id="wave"></canvas>
+    <!-- borders end -->
+
+    <!-- logo start -->
+    <div class="logo top-position-tertiary"></div>
+    <!-- logo end -->
+
+    <!-- menu start -->
+    <div class="menu-trigger top-position-tertiary" id="menu-mobile-btn">
+        <button class="lines-button menu-toggle plus" id="menu-mobile-caller" type="button">
+            <span class="lines inverse"></span>
+        </button>
+    </div>
+    <div id="menu-mobile">
+        <div class="menu-nav-wrapper">
+            <nav class="menu-nav">
+                <ul>
+                    <li class="menu-mobile activated">
+                        <a class="menu-state link-underline-menu active call-home" category="home" id="fire-home"><span class="cross_out">Inicio</span></a>
+                    </li>
+                    <li class="menu-mobile">
+                        <a class="menu-state link-underline-menu call-page" category="about" id="fire-about"><span class="cross_out">Acerca de mi</span></a>
+                    </li>
+                    <li class="menu-mobile">
+                        <a class="menu-state link-underline-menu call-page" category="skills" id="fire-skills"><span class="cross_out">Habilidades</span></a>
+                    </li>
+                    <li class="menu-mobile">
+                        <a class="menu-state link-underline-menu call-page" category="works" id="fire-works"><span class="cross_out">Trabajos</span></a>
+                    </li>
+                    <li class="credits">
+                        <a>© 2020 All Rights Reserved.</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- menu end -->
+
+    <div id="content">
+        <div id="background_img" class="bg_img"></div>
+
+        <!------------------------------- Sections start ------------------------------->
+
+        <!------------------------------- Home ------------------------------->
+
+        <div class="section_home" category="home" id="home">
+            <div class="center-container-home">
+                <div class="center-block-home">
+                    <div class="upper-conten">
+                        <div class="container sections-home">
+                            <div class="row introduction">
+                                <h2 class="home-page-title fadeIn-element">
+                                    Diseñador, Desarrollador Front-end
+                                </h2>
+                                <h1 class="home-page-title fadeIn-element">
+                                    Pedro Ramos
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------- About ------------------------------->
+
+        <div class="section_regular lower-page" category="about" id="about">
+            <div class="center-container">
+                <div class="center-block">
+                    <div class="lower-content">
+                        <div class="container sections">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h2 class="section-subheading">
+                                        <span>¿Quién es este sujeto?</span>
+                                    </h2>
+                                    <h2 class="section-heading">
+                                        Hey, soy Pedro
+                                    </h2>
+                                    <p>
+                                        Me apasionan los efectos de la interfaz de usuario, las animaciones y la creación de experiencias de usuario intuitivas y dinámicas. 
+                                        <a class="link-underline">"Hagamos algo especial"</a>.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="dividerOT"></div>
+
+                            <div class="row mb-5">
+                                <div class="col-sm-12 about-block">
+                                    <h4 class="about-heading">
+                                        Años en el negocio
+                                    </h4>
+                                    <div class="about-number-title">
+                                        5
+                                    </div>
+                                    <p>
+                                        Desde que empecé mi carrera como diseñador independiente hace casi 5 años, he hecho trabajos para agencias, he consultado a empresas de nueva creación y he colaborado con personas de talento para crear productos digitales tanto para empresas como para consumidores. Estoy tranquilamente confiado, naturalmente soy curioso, y trabajo perpetuamente en mejorar mis habilidades .
+                                        <a class="link-underline">"Un problema de diseño a la vez"</a>.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <h2 class="section-subheading mb-3">
+                                <span>Características al azar</span>
+                            </h2>
+
+                            <div class="row">
+                                <div class="col-6 col-md-4 col-lg-2 about-block mt-2 mt-md-1">
+                                    <h4 class="about-heading text-center text-lg-left">
+                                        Jugar video-juegos
+                                    </h4>
+                                    <div class="random-fact-title">
+                                        <i class="fa fa-gamepad"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 about-block mt-2 mt-md-1">
+                                    <h4 class="about-heading text-center text-lg-left">
+                                        Me gusta nadar
+                                    </h4>
+                                    <div class="random-fact-title">
+                                        <i class="fas fa-swimmer"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 about-block mt-5 mt-md-1">
+                                    <h4 class="about-heading text-center text-lg-left">
+                                        Adoro beber té
+                                    </h4>
+                                    <div class="random-fact-title">
+                                        <i class="mdi mdi-tea"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 about-block mt-5 mt-lg-1">
+                                    <h4 class="about-heading text-center text-lg-left">
+                                        Pizza!
+                                    </h4>
+                                    <div class="random-fact-title">
+                                        <i class="fas fa-pizza-slice"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 about-block mt-5 mt-lg-1">
+                                    <h4 class="about-heading text-center text-lg-left">
+                                        Soy Sagitario
+                                    </h4>
+                                    <div class="random-fact-title">
+                                        <i class="mdi mdi-zodiac-sagittarius"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 about-block mt-5 mt-lg-1">
+                                    <h4 class="about-heading text-center text-lg-left">
+                                        Me encanta la fantasía
+                                    </h4>
+                                    <div class="random-fact-title">
+                                        <i class="fas fa-hat-wizard"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dividerOT"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------- Skills ------------------------------->
+
+        <div class="section_regular lower-page" category="skills" id="skills">
+            <div class="center-container">
+                <div class="center-block">
+                    <div class="lower-content">
+                        <div class="container sections">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h2 class="section-subheading">
+                                        <span>Lo que hago</span>
+                                    </h2>
+                                    <h2 class="section-heading">
+                                        Habilidades
+                                    </h2>
+                                </div>
+                            </div>
+
+                            <div class="dividerOT"></div>
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-12 services-block">
+                                    <h4 class="service-heading">
+                                        Responsivo
+                                    </h4>
+                                    <div class="service-number-title">
+                                        Responsivo
+                                    </div>
+                                    <p>
+                                        Mis diseños funcionarán en cualquier dispositivo, grande o pequeño.
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 services-block services-block-correction">
+                                    <h4 class="service-heading">
+                                        Intuitivo
+                                    </h4>
+                                    <div class="service-number-title">
+                                        Intuitivo
+                                    </div>
+                                    <p>
+                                        Fuerte preferencia por el UX/UI fácil de usar e intuitivo.
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 services-block services-block-correction">
+                                    <h4 class="service-heading">
+                                        Dinámico
+                                    </h4>
+                                    <div class="service-number-title">
+                                        Dinámico
+                                    </div>
+                                    <p>
+                                        Las páginas web no tienen que ser estáticas, me encanta hacer que las páginas cobren vida.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="dividerOT"></div>
+                            <div class="row">
+                                <!-- Skills -->
+                                <div class="col-lg-4 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12 services-block services-block-correction">
+                                            <h4 class="service-heading">
+                                                Css
+                                            </h4>
+                                            <div class="service-number-title">
+                                                Css
+                                            </div>
+                                            <div class="show-skillbar">
+                                                <div class="skillbar" data-percent="80"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 services-block services-block-correction">
+                                            <h4 class="service-heading">
+                                                HTML
+                                            </h4>
+                                            <div class="service-number-title">
+                                                HTML
+                                            </div>
+                                            <div class="show-skillbar">
+                                                <div class="skillbar" data-percent="90"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 services-block services-block-correction">
+                                            <h4 class="service-heading">
+                                                JavaScript
+                                            </h4>
+                                            <div class="service-number-title">
+                                                JavaScript
+                                            </div>
+                                            <div class="show-skillbar">
+                                                <div class="skillbar" data-percent="80"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 services-block services-block-correction">
+                                            <h4 class="service-heading">
+                                                ReactJS
+                                            </h4>
+                                            <div class="service-number-title">
+                                                ReactJS
+                                            </div>
+                                            <div class="show-skillbar">
+                                                <div class="skillbar" data-percent="10"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12 services-block services-block-correction">
+                                            <h4 class="service-heading">
+                                                Diseño UI
+                                            </h4>
+                                            <div class="service-number-title">
+                                                Diseño UI
+                                            </div>
+                                            <div class="show-skillbar">
+                                                <div class="skillbar" data-percent="70"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 services-block services-block-correction">
+                                            <h4 class="service-heading">
+                                                Branding
+                                            </h4>
+                                            <div class="service-number-title">
+                                                Branding
+                                            </div>
+                                            <div class="show-skillbar">
+                                                <div class="skillbar" data-percent="60"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 services-block services-block-correction">
+                                            <h4 class="service-heading">
+                                                Illustrator
+                                            </h4>
+                                            <div class="service-number-title">
+                                                Illustrator
+                                            </div>
+                                            <div class="show-skillbar">
+                                                <div class="skillbar" data-percent="60"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Language -->
+                                <div class="col-lg-4 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12 services-block services-block-correction">
+                                            <h4 class="service-heading">
+                                                English
+                                            </h4>
+                                            <div class="service-number-title">
+                                                <i class="fas fa-flag"></i>
+                                            </div>
+                                            <div class="show-skillbar">
+                                                <div class="skillbar" data-percent="50"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 services-block services-block-correction">
+                                            <h4 class="service-heading">
+                                                Español
+                                            </h4>
+                                            <div class="service-number-title">
+                                                <i class="fas fa-flag"></i>
+                                            </div>
+                                            <div class="show-skillbar">
+                                                <div class="skillbar" data-percent="90"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 services-block services-block-correction">
+                                            <h4 class="service-heading">
+                                                Français
+                                            </h4>
+                                            <div class="service-number-title">
+                                                <i class="fas fa-flag"></i>
+                                            </div>
+                                            <div class="show-skillbar">
+                                                <div class="skillbar" data-percent="60"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 services-block services-block-correction">
+                                            <h4 class="service-heading">
+                                                Pусский
+                                            </h4>
+                                            <div class="service-number-title">
+                                                <i class="fas fa-flag"></i>
+                                            </div>
+                                            <div class="show-skillbar">
+                                                <div class="skillbar" data-percent="60"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------- Works ------------------------------->
+
+        <div class="section_regular lower-page" category="works" id="works">
+            <div class="center-container">
+                <div class="center-block">
+                    <div class="lower-content">
+                        <div class="container sections">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h2 class="section-subheading">
+                                        <span>Lo que he hecho</span>
+                                    </h2>
+                                    <h2 class="section-heading">
+                                        Trabajos
+                                    </h2>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="c-btn fullwidth-liquid" category="logos"><span>BRANDING</span></button>
+                                    <button class="c-btn fullwidth-liquid" category="templates"><span>WEB</span></button>
+                                </div>
+                            </div>
+                            <div class="dividerOT"></div>
+                            <div class="legendary legendary-gallery menu-item row" category="logos" itemscope>
+
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_1.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_1.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 1</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_2.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_2.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 2</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_3.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_3.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 3</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_4.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_4.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 4</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_5.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_5.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 5</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_6.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_6.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 6</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_7.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_7.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 7</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_8.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_8.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 8</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_9.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_9.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 9</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_10.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_10.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 10</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_11.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_11.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 11</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_12.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_12.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 12</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_13.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_13.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 13</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_14.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_14.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 14</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_15.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_15.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 15</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_16.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_16.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 16</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_17.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_17.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 17</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_18.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_18.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 18</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_19.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_19.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 19</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_20.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_20.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 20</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_21.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_21.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 21</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_22.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_22.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 22</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_23.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_23.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 23</figcaption> -->
+                                </figure>
+                                
+                                <figure category="logos" class="col-sm-6 col-lg-3 mb-4 img-filter" itemprop="associatedMedia" itemscope>
+                                    <a href="recursos/img/work/logo_24.jpg" itemprop="contentUrl" data-size="300x300"><img src="recursos/img/work/logo_24.jpg" alt="Image description" itemprop="thumbnail"></a>
+                                    <!-- <figcaption itemprop="caption description">Image caption 24</figcaption> -->
+                                </figure>
+
+                            </div>
+                            <div class="legendary legendary-templates row" category="templates">
+                                <div class="col-sm-12 col-lg-6 mx-auto my-2">
+                                    <div class="card card-cascade wider reverse">
+                                        <div class="view view-cascade overlay">
+                                            <img class="card-img-top" src="recursos/img/work/cober.jpg" alt="Card image cap">
+                                            <a href="http://www.cober.com.ve">
+                                                <div class="mask rgba-white-slight"></div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body card-body-cascade text-center">
+                                            <a target="_blank" href="http://www.cober.com.ve"><h2 class="font-weight-bold indigo-text py-2">COBER.com.ve</h2></a>
+                                            <p class="card-text">La tecnología a tu alcance.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-6 mx-auto my-2">
+                                    <div class="card card-cascade wider reverse">
+                                        <div class="view view-cascade overlay">
+                                            <img class="card-img-top" src="recursos/img/work/integradata.jpg" alt="Card image cap">
+                                            <a href="http://integradata.com.ve">
+                                                <div class="mask rgba-white-slight"></div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body card-body-cascade text-center">
+                                            <a target="_blank" href="http://integradata.com.ve"><h2 class="font-weight-bold indigo-text py-2">Integradata.com.ve</h2></a>
+                                            <p class="card-text">Soluciones en telecomunicaciones.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-6 mx-auto my-2">
+                                    <div class="card card-cascade wider reverse">
+                                        <div class="view view-cascade overlay">
+                                            <img class="card-img-top" src="recursos/img/work/vacacionesvenezuela.jpg" alt="Card image cap">
+                                            <a href="http://www.vacacionesvenezuela.com">
+                                                <div class="mask rgba-white-slight"></div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body card-body-cascade text-center">
+                                            <a target="_blank" href="http://www.vacacionesvenezuela.com"><h2 class="font-weight-bold indigo-text py-2">Vacacionesvenezuela.com</h2></a>
+                                            <p class="card-text">Experimenta la emoción.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="pswp__bg"></div>
+                                <div class="pswp__scroll-wrap">
+                                    <div class="pswp__container">
+                                        <div class="pswp__item"></div>
+                                        <div class="pswp__item"></div>
+                                        <div class="pswp__item"></div>
+                                    </div>
+                                    <div class="pswp__ui pswp__ui--hidden">
+                                        <div class="pswp__top-bar" style="display: none;">
+                                            <div class="pswp__counter"></div>
+                                            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                                            <button class="pswp__button pswp__button--share" title="Share"></button>
+                                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                                            <div class="pswp__preloader">
+                                                <div class="pswp__preloader__icn">
+                                                    <div class="pswp__preloader__cut">
+                                                        <div class="pswp__preloader__donut"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap" style="display: none;">
+                                            <div class="pswp__share-tooltip"></div> 
+                                        </div>
+                                        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)" style="display: none;"></button>
+                                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)" style="display: none;"></button>
+                                        <div class="pswp__caption">
+                                            <div class="pswp__caption__center text-center"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------- Sections end ------------------------------->
+
+        <!-- scroll to top start -->
+        <a class="scrollToTop" href="#">
+            <div class="to-top-arrow to-top-arrow">
+                <span class="icon-arrow-up-outline"></span>
+            </div>
+        </a>
+        <!-- scroll to top end -->
+
+    </div>
+
+    <!-- scripts start --> 
+    <script src="recursos/plugs/plugins.js"></script>
+    <script src="recursos/plugs/photoswipe.min.js"></script>
+    <script src="recursos/plugs/photoswipe-ui-default.min.js"></script>
+        <!-- script_preloader start -->
+    <script>for(var pathEls=document.querySelectorAll("path"),i=0;i<pathEls.length;i++){var pathEl=pathEls[i],offset=anime.setDashoffset(pathEl);pathEl.setAttribute("stroke-dashoffset",offset)}anime({targets:pathEl,strokeDashoffset:[offset,0],duration:5e3,delay:100,loop:!1,direction:"alternate",easing:"easeInOutSine",autoplay:!0});</script>
+        <!-- script_preloader end -->
+    <script src="recursos/js/main.js"></script>
+    <!-- scripts end -->
+</body>
+</html>

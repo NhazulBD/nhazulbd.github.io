@@ -1,0 +1,73 @@
+/*
+[CSS Index - profile]
+
+---
+
+Author:   RZ
+*/
+
+/*
+ .- 
+*/
+/**********************************Profile-Start**********************************/
+.profile-card {
+    margin-top: 100px;
+    background: #272727;
+}
+.profile-card strong{
+    color: #fff;
+}
+.custom-text {
+    color: #cb218e!important;
+}
+.profile-card .avatar {
+    max-width: 150px;
+    max-height: 150px;
+    margin-top: -70px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-card .avatar img.rounded-circle {
+    max-width: 150px;
+}
+ul.striped li {
+    color: #9e9e9e!important;;
+    padding: .5rem;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+.tabs-custom {
+    font-weight: bold;
+    background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%)!important;
+}
+.tab-content {
+    background: #272727;
+    max-height: 25rem;
+}
+#addMoreImg {
+    color: #cb218e;
+}
+#cardAddMoreImg.card {
+    background-color: transparent!important;
+}
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%; 
+}
+/**********************************Profile-End**********************************/
+@media (max-width: 450px) {
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+}

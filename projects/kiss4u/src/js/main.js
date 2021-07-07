@@ -23,10 +23,16 @@ $(function() {
     $('.hiddendiv.common').remove();
     
     //Side-Nav
+    $("#sideoverlay").hide();
     $(document).ready(function () {
       $('#slide-in').on('click', function () {
         $('#sidebar, #gallery').toggleClass('active');
+        $("#sideoverlay").show();
       });
+    });
+    $("#sideoverlay").click(function(){
+      $('#sidebar, #gallery').toggleClass('active');
+      $("#sideoverlay").hide();
     });
 
     //Button to top

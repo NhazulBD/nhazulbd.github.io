@@ -79,18 +79,4 @@ ul.striped li {
         column-width: 100%;
     }
 }
-@media (max-width: 768px) {
-    #menu_container.active {
-        margin-left: -15em!important;
-    }
-    #sidebar {
-        margin-left: -15em;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
-}
 /**********************************Responsive-End**********************************/

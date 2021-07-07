@@ -1,5 +1,5 @@
 /*
-  [JS Index - Profile]
+  [JS Index - Privacy]
   
   ---
   

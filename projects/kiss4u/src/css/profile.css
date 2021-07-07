@@ -9,7 +9,7 @@ Author:   RZ
 /*
  .- 
 */
-/**********************************Profile-Start**********************************/
+/**********************************Content-Start**********************************/
 .profile-card {
     margin-top: 100px;
     background: #272727;
@@ -60,7 +60,11 @@ ul.striped li {
     -moz-column-width: 33%;
     column-width: 33%; 
 }
-/**********************************Profile-End**********************************/
+#menu_container {
+    transition: all .25s ease;
+}
+/**********************************Content-End**********************************/
+/**********************************Responsive-Start**********************************/
 @media (max-width: 450px) {
     .gallery {
         -webkit-column-count: 1;
@@ -71,3 +75,18 @@ ul.striped li {
         column-width: 100%;
     }
 }
+@media (max-width: 768px) {
+    #menu_container.active {
+        margin-left: -15em!important;
+    }
+    #sidebar {
+        margin-left: -15em;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+/**********************************Responsive-End**********************************/

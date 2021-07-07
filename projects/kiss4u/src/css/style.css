@@ -129,6 +129,9 @@ Author:   RZ
 #register p {
     color: #9e9e9e!important;
 }
+.md-pills li {
+    padding: .3rem;
+}
 /******************Dropdown******************/
 .dropdown-menu {
     min-width: 30rem;

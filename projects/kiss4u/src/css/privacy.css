@@ -29,7 +29,25 @@ ol, ul {
 .container.px-lg-5 strong{
     color: #e4e4e4;
 }
-
+#menu_container {
+    transition: all .25s ease;
+}
+/**********************************Content-End**********************************/
+/**********************************Responsive-Start**********************************/
+@media (max-width: 768px) {
+    #menu_container.active {
+        margin-left: -15em!important;
+    }
+    #sidebar {
+        margin-left: -15em;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
 @media (max-width: 1439px) {
     #rz-intro {
         padding-left: 0;
@@ -40,5 +58,4 @@ ol, ul {
         padding-left: 0px;
     }
 }
-/**********************************Content-End**********************************/
-
+/**********************************Responsive-End**********************************/

@@ -84,11 +84,6 @@ $(function() {
       }
     });
 
-    $(document).ready(function() {
-      $("#sidebar #side-menu .menu-item .collapsible-body").css({"display":"block"});
-      $("#sidebar #side-menu .menu-item .collapsible-header.arrow-r").addClass("active");
-    });
-
     $(".ul-tabs.nav a.lock").click(function (){
       $(".ul-tabs.nav a.btn-custom").addClass("lock");
       $(this).removeClass("lock");

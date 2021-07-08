@@ -16,6 +16,8 @@
         <!-- style start -->
         <link href="../src/css/reset.css" media="all" rel="stylesheet" type="text/css">
         <link href="../src/css/rz.css" media="all" rel="stylesheet" type="text/css">
+        <link href="../src/mdb5/css/mdb.min.css" media="all" rel="stylesheet" type="text/css">
+        <link href="../src/css/rz-custom.css" media="all" rel="stylesheet" type="text/css">
         <link href="../src/font/fonts/fonts.css" media="all" rel="stylesheet" type="text/css">
         <link href="../src/css/style.css" media="all" rel="stylesheet" type="text/css">
         <link href="../src/css/main.css" media="all" rel="stylesheet" type="text/css">
@@ -38,7 +40,7 @@
         <div class="wrapper">
 
             <!-------------------------------------- sidebar start -------------------------------------->
-            <nav id="sidebar" class="side-nav sn-bg-1 rz-sidenav">
+            <nav id="sidebar" class="side-nav sn-bg-2 rz-sidenav">
                 <ul class="list-unstyled custom-scroll" style="max-height:100%; padding-bottom:90px; position:relative;">
                     <li class="logo-sn d-block waves-effect">
                         <div class="text-center">
@@ -54,30 +56,36 @@
                         </div>
                     </li>
                     <li>
-                        <ul id="side-menu" class="collapsible collapsible-accordion">
+                        <ul id="side-menu" class="accordion mt-2">
                             <li id="" class="menu-item">
-                                <a class="collapsible-header waves-effect arrow-r">
-                                    User
-                                    <i class="fa fa-angle-down rotate-icon"></i>
-                                </a>
-                                <div class="collapsible-body"> 
+                                <div class="accordion-header" id="headUser">
+                                    <a class="collapsible-header waves-effect arrow-r" data-mdb-toggle="collapse" data-mdb-target="#panelUser" aria-expanded="false" aria-controls="panelUser">
+                                        User
+                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                    </a>
+                                </div>
+                                <div id="panelUser" class="accordion-collapse collapse" aria-labelledby="headUser"> 
                                     <ul class="sub-menu">
                                         <li id="" class="menu-item"><a category="singin" class="collapsible-header waves-effect frm-a" data-toggle="modal" data-target="#form-accModal">Login</a></li>
                                         <li id="" class="menu-item"><a category="singup" class="collapsible-header waves-effect frm-a" data-toggle="modal" data-target="#form-accModal">Join Now</a></li>
                                         <hr class="my-1">
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect" data-toggle="modal" data-target="#promotionModal">Promotions</a></li>
+                                        <li id="" class="menu-item"><a class="collapsible-header waves-effect">Stories</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect">Messages</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect">Favorites</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect">Get Credits</a></li>
+                                        <li id="" class="menu-item"><a class="collapsible-header waves-effect">Awards</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li id="" class="menu-item">
-                                <a class="collapsible-header waves-effect arrow-r">
-                                    Language
-                                    <i class="fa fa-angle-down rotate-icon"></i>
-                                </a>
-                                <div class="collapsible-body"> 
+                                <div class="accordion-header" id="headLangHome">
+                                    <a class="collapsible-header waves-effect arrow-r" data-mdb-toggle="collapse" data-mdb-target="#paneLangHome" aria-expanded="false" aria-controls="paneLangHome">
+                                        Language
+                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                    </a>
+                                </div>
+                                <div id="paneLangHome" class="accordion-collapse collapse" aria-labelledby="headLangHome"> 
                                     <ul class="sub-menu">
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect">Language#1</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect">Language#2</a></li>
@@ -92,11 +100,13 @@
                                 </div>
                             </li>
                             <li id="" class="menu-item">
-                                <a class="collapsible-header waves-effect arrow-r">
-                                    Category
-                                    <i class="fa fa-angle-down rotate-icon"></i>
-                                </a>
-                                <div class="collapsible-body"> 
+                                <div class="accordion-header" id="headCategory">
+                                    <a class="collapsible-header waves-effect arrow-r" data-mdb-toggle="collapse" data-mdb-target="#panelCategory" aria-expanded="true" aria-controls="panelCategory">
+                                        Category
+                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                    </a>
+                                </div>
+                                <div id="panelCategory" class="accordion-collapse collapse show" aria-labelledby="headCategory"> 
                                     <ul class="sub-menu">
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="boy">Boy</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="gay">Gay</a></li>
@@ -105,11 +115,13 @@
                                 </div>
                             </li>
                             <li id="" class="menu-item">
-                                <a class="collapsible-header waves-effect arrow-r">
-                                    Price
-                                    <i class="fa fa-angle-down rotate-icon"></i>
-                                </a>
-                                <div class="collapsible-body"> 
+                                <div class="accordion-header" id="headPrice">
+                                    <a class="collapsible-header waves-effect arrow-r" data-mdb-toggle="collapse" data-mdb-target="#panelPrice" aria-expanded="true" aria-controls="panelPrice">
+                                        Price
+                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                    </a>
+                                </div>
+                                <div id="panelPrice" class="accordion-collapse collapse show" aria-labelledby="headPrice"> 
                                     <ul class="sub-menu">
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="prc1">0.01 - 0.85</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="prc2">0.85 - 1.49</a></li>
@@ -122,11 +134,13 @@
                                 </div>
                             </li>
                             <li id="" class="menu-item">
-                                <a class="collapsible-header waves-effect arrow-r">
-                                    Show Type
-                                    <i class="fa fa-angle-down rotate-icon"></i>
-                                </a>
-                                <div class="collapsible-body"> 
+                                <div class="accordion-header" id="headShowT">
+                                    <a class="collapsible-header waves-effect arrow-r" data-mdb-toggle="collapse" data-mdb-target="#panelShowT" aria-expanded="true" aria-controls="panelShowT">
+                                        Show Type
+                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                    </a>
+                                </div>
+                                <div id="panelShowT" class="accordion-collapse collapse show" aria-labelledby="headShowT"> 
                                     <ul class="sub-menu">
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="privatechat">Private Chat</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="freechat">Free Chat</a></li>
@@ -137,11 +151,13 @@
                                 </div>
                             </li>
                             <li id="" class="menu-item">
-                                <a class="collapsible-header waves-effect arrow-r">
-                                    Consent
-                                    <i class="fa fa-angle-down rotate-icon"></i>
-                                </a>
-                                <div class="collapsible-body"> 
+                                <div class="accordion-header" id="headConsent">
+                                    <a class="collapsible-header waves-effect arrow-r" data-mdb-toggle="collapse" data-mdb-target="#panelConsent" aria-expanded="true" aria-controls="panelConsent">
+                                        Consent
+                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                    </a>
+                                </div>
+                                <div id="panelConsent" class="accordion-collapse collapse show" aria-labelledby="headConsent"> 
                                     <ul class="sub-menu">
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="closeup">Close - Up</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="sextoys">Sex Toys</a></li>
@@ -151,11 +167,13 @@
                                 </div>
                             </li>
                             <li id="" class="menu-item">
-                                <a class="collapsible-header waves-effect arrow-r">
-                                    Age
-                                    <i class="fa fa-angle-down rotate-icon"></i>
-                                </a>
-                                <div class="collapsible-body"> 
+                                <div class="accordion-header" id="headAge">
+                                    <a class="collapsible-header waves-effect arrow-r" data-mdb-toggle="collapse" data-mdb-target="#panelAge" aria-expanded="true" aria-controls="panelAge">
+                                        Age
+                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                    </a>
+                                </div>
+                                <div id="panelAge" class="accordion-collapse collapse show" aria-labelledby="headAge"> 
                                     <ul class="sub-menu">
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="young">18 - 23</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="youngadult">23 - 30</a></li>
@@ -165,26 +183,30 @@
                                 </div>
                             </li>
                             <li id="" class="menu-item">
-                                <a class="collapsible-header waves-effect arrow-r">
-                                    Lang
-                                    <i class="fa fa-angle-down rotate-icon"></i>
-                                </a>
-                                <div class="collapsible-body"> 
+                                <div class="accordion-header" id="headLang">
+                                    <a class="collapsible-header waves-effect arrow-r" data-mdb-toggle="collapse" data-mdb-target="#panelLang" aria-expanded="true" aria-controls="panelLang">
+                                        Lang
+                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                    </a>
+                                </div>
+                                <div id="panelLang" class="accordion-collapse collapse show" aria-labelledby="headLang"> 
                                     <ul class="sub-menu">
-                                        <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="ingles">English</a></li>
+                                        <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="english">English</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="french">French</a></li>
-                                        <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="espanol">Spanish</a></li>
+                                        <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="spanish">Spanish</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="italiano">Italian</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="german">German</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li id="" class="menu-item">
-                                <a class="collapsible-header waves-effect arrow-r">
-                                    Aspect
-                                    <i class="fa fa-angle-down rotate-icon"></i>
-                                </a>
-                                <div class="collapsible-body"> 
+                                <div class="accordion-header" id="headAspect">
+                                    <a class="collapsible-header waves-effect arrow-r" data-mdb-toggle="collapse" data-mdb-target="#panelAspect" aria-expanded="true" aria-controls="panelAspect">
+                                        Aspect
+                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                    </a>
+                                </div>
+                                <div id="panelAspect" class="accordion-collapse collapse show" aria-labelledby="headAspect"> 
                                     <ul class="sub-menu">
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="skinny">Skinny</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="muscular">Muscular</a></li>
@@ -193,11 +215,13 @@
                                 </div>
                             </li>
                             <li id="" class="menu-item">
-                                <a class="collapsible-header waves-effect arrow-r">
-                                    Hair
-                                    <i class="fa fa-angle-down rotate-icon"></i>
-                                </a>
-                                <div class="collapsible-body"> 
+                                <div class="accordion-header" id="headHair">
+                                    <a class="collapsible-header waves-effect arrow-r" data-mdb-toggle="collapse" data-mdb-target="#panelHair" aria-expanded="true" aria-controls="panelHair">
+                                        Hair
+                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                    </a>
+                                </div>
+                                <div id="panelHair" class="accordion-collapse collapse show" aria-labelledby="headHair"> 
                                     <ul class="sub-menu">
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="black">Black</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="blonde">Blonde</a></li>
@@ -209,11 +233,13 @@
                                 </div>
                             </li>
                             <li id="" class="menu-item">
-                                <a class="collapsible-header waves-effect arrow-r">
-                                    Region
-                                    <i class="fa fa-angle-down rotate-icon"></i>
-                                </a>
-                                <div class="collapsible-body"> 
+                                <div class="accordion-header" id="headRegion">
+                                    <a class="collapsible-header waves-effect arrow-r" data-mdb-toggle="collapse" data-mdb-target="#panelRegion" aria-expanded="true" aria-controls="panelRegion">
+                                        Region
+                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                    </a>
+                                </div>
+                                <div id="panelRegion" class="accordion-collapse collapse show" aria-labelledby="headRegion"> 
                                     <ul class="sub-menu">
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="europa">Europe</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect filter-el-a" id="sthamerica">South America</a></li>
@@ -786,7 +812,6 @@
                                 </a>
                             </div>
                         </div>
-                    
                     </div>
                     <div class="buttonplus-container text-center w-100 my-5">
                         <a href="#" class="btn btn-custom">Show More Models</a>

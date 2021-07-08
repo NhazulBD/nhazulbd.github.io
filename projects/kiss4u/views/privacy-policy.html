@@ -16,6 +16,7 @@
         <!-- style start -->
         <link href="../src/css/reset.css" media="all" rel="stylesheet" type="text/css">
         <link href="../src/css/rz.css" media="all" rel="stylesheet" type="text/css">
+        <link href="../src/mdb5/css/mdb.min.css" media="all" rel="stylesheet" type="text/css">
         <link href="../src/font/fonts/fonts.css" media="all" rel="stylesheet" type="text/css">
         <link href="../src/css/style.css" media="all" rel="stylesheet" type="text/css">
         <link href="../src/css/privacy.css" media="all" rel="stylesheet" type="text/css">
@@ -54,18 +55,20 @@
                         </div>
                     </li>
                     <li>
-                        <ul id="side-menu" class="collapsible collapsible-accordion">
+                        <ul id="side-menu" class="accordion mt-2">
                             <li id="" class="menu-item">
-                                <a class="collapsible-header waves-effect arrow-r">
-                                    Usuario
-                                    <i class="fa fa-angle-down rotate-icon"></i>
-                                </a>
-                                <div class="collapsible-body"> 
+                                <div class="accordion-header" id="headUser">
+                                    <a class="collapsible-header waves-effect arrow-r" data-mdb-toggle="collapse" data-mdb-target="#panelUser" aria-expanded="false" aria-controls="panelUser">
+                                        User
+                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                    </a>
+                                </div>
+                                <div id="panelUser" class="accordion-collapse collapse" aria-labelledby="headUser"> 
                                     <ul class="sub-menu">
                                         <li id="" class="menu-item"><a category="singin" class="collapsible-header waves-effect frm-a" data-toggle="modal" data-target="#form-accModal">Login</a></li>
                                         <li id="" class="menu-item"><a category="singup" class="collapsible-header waves-effect frm-a" data-toggle="modal" data-target="#form-accModal">Join Now</a></li>
                                         <hr class="my-1">
-                                        <li id="" class="menu-item"><a class="collapsible-header waves-effect" data-toggle="modal" data-target="#promotionModal">Promociones</a></li>
+                                        <li id="" class="menu-item"><a class="collapsible-header waves-effect" data-toggle="modal" data-target="#promotionModal">Promotions</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect">Stories</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect">Messages</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect">Favorites</a></li>
@@ -75,11 +78,13 @@
                                 </div>
                             </li>
                             <li id="" class="menu-item">
-                                <a class="collapsible-header waves-effect arrow-r">
-                                    Language
-                                    <i class="fa fa-angle-down rotate-icon"></i>
-                                </a>
-                                <div class="collapsible-body"> 
+                                <div class="accordion-header" id="headLangHome">
+                                    <a class="collapsible-header waves-effect arrow-r" data-mdb-toggle="collapse" data-mdb-target="#paneLangHome" aria-expanded="false" aria-controls="paneLangHome">
+                                        Language
+                                        <i class="fa fa-angle-down rotate-icon"></i>
+                                    </a>
+                                </div>
+                                <div id="paneLangHome" class="accordion-collapse collapse" aria-labelledby="headLangHome"> 
                                     <ul class="sub-menu">
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect">Language#1</a></li>
                                         <li id="" class="menu-item"><a class="collapsible-header waves-effect">Language#2</a></li>

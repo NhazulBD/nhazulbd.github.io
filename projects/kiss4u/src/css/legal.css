@@ -12,6 +12,13 @@ Author:   RZ
 ol, ul {
     padding-left: 2rem;
 }
+#wrapp *{
+    text-align: justify;
+    text-justify: inter-word;
+}
+#wrapp a{
+    color: #cb218e;
+}
 #rz-intro {
     background-color: rgba(0,0,0,.2);
     color: #c7c7c7;
@@ -32,6 +39,7 @@ ol, ul {
 #menu_container {
     transition: all .25s ease;
 }
+
 /**********************************Content-End**********************************/
 /**********************************Responsive-Start**********************************/
 @media (max-width: 768px) {

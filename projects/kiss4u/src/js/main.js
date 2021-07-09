@@ -47,7 +47,7 @@ $(function() {
     $(btn).click(function () {
       $('html, body').animate({
          scrollTop: $("body").offset().top
-      }, 1000);
+      }, 50);
    });
     
     //Filter-Form

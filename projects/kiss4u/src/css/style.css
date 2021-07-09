@@ -116,7 +116,6 @@ Author:   RZ
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .svgicon {
     display: inline-block;
     height: 1em;
@@ -196,6 +195,10 @@ Author:   RZ
 }
 .btn-group .btn-outline-custom {
     line-height: 12px!important;
+}
+#btn-top.btn-floating i {
+    line-height: 47px!important;
+    width: inherit!important;
 }
 /******************Scroll-Bar******************/
 .custom-scroll {

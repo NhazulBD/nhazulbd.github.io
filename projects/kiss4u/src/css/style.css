@@ -301,9 +301,9 @@ Author:   RZ
 
 @media (min-width: 1400px){
     .col-xl-2 {
-        -ms-flex: 0 0 8.333333%;
-        flex: 0 0 8.333333%;
-        max-width: 8.333333%;
+        -ms-flex: 0 0 10%;
+        flex: 0 0 10%;
+        max-width: 10%;
     }
     .col-xl-4 {
         -ms-flex: 0 0 16.666667%;

@@ -14,3 +14,139 @@
     align-items: center;
     overflow: hidden;
 }
+
+.rz-select .select-dropdown {
+    color: #fff;
+}
+.select-wrapper span.caret {
+    color: #cb218e;
+}
+.rz-select .select-wrapper.md-form>ul li.select-toggle-all label {
+    padding-left: 38px;
+}
+.rz-select .select-wrapper.md-form>ul li label {
+    top: 0;
+    font-size: .9rem;
+    color: #cb218e;
+    -webkit-transform: none;
+    transform: none;
+}
+.rz-select .md-form label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    color: #757575;
+    cursor: text;
+    -webkit-transition: color .2s ease-out,-webkit-transform .2s ease-out;
+    transition: color .2s ease-out,-webkit-transform .2s ease-out;
+    transition: transform .2s ease-out,color .2s ease-out;
+    transition: transform .2s ease-out,color .2s ease-out,-webkit-transform .2s ease-out;
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+.form-check-input[type="checkbox"]+label:before, 
+.form-check-input[type="checkbox"]:not(.filled-in)+label:after,
+.rz-select input[type="checkbox"]+label:before, 
+.rz-select input[type="checkbox"]:not(.filled-in)+label:after, 
+label.btn input[type="checkbox"]+label:before, 
+label.btn input[type="checkbox"]:not(.filled-in)+label:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    content: "";
+    border: 2px solid #8a8a8a;
+    border-radius: 1px;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+.form-check-input[type="checkbox"]:not(.filled-in)+label:after, 
+.rz-select input[type="checkbox"]:not(.filled-in)+label:after, 
+label.btn input[type="checkbox"]:not(.filled-in)+label:after {
+    border: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.form-check-input[type="checkbox"]+label:before, 
+.form-check-input[type="checkbox"]:not(.filled-in)+label:after, 
+.rz-select input[type="checkbox"]+label:before, 
+.rz-select input[type="checkbox"]:not(.filled-in)+label:after, 
+label.btn input[type="checkbox"]+label:before, 
+label.btn input[type="checkbox"]:not(.filled-in)+label:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    content: "";
+    border: 2px solid #8a8a8a;
+    border-radius: 1px;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.rz-select .dropdown-content li>a, .dropdown-content li>span {
+    display: block;
+    padding: .5rem;
+    padding-bottom: .2rem;
+    font-size: .9rem;
+    color: #cb218e;
+}
+.rz-select .dropdown-content li {
+    width: 100%;
+    clear: both;
+    line-height: 1.3rem;
+    color: #000;
+    text-align: left;
+    text-transform: none;
+    cursor: pointer;
+}
+
+.form-check-input[type="checkbox"]+label, 
+.rz-select input[type="checkbox"]+label, 
+label.btn input[type="checkbox"]+label {
+    position: relative;
+    display: inline-block;
+    height: 1.5625rem;
+    padding-left: 35px;
+    line-height: 1.5625rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.rz-select input[type="checkbox"]:disabled:not(:checked)+label:before, 
+.form-check-input[type="checkbox"]:disabled:not(:checked)+label:before, 
+label.btn input[type="checkbox"]:disabled:not(:checked)+label:before {
+    background-color: #bdbdbd;
+    border-color: #bdbdbd;
+}
+
+.form-check-input[type="checkbox"]:checked+label:before, 
+.rz-select input[type="checkbox"]:checked+label:before, 
+label.btn input[type="checkbox"]:checked+label:before {
+    top: -4px;
+    left: -5px;
+    width: 12px;
+    height: 1.375rem;
+    border-top: 2px solid transparent;
+    border-right: 2px solid #cb218e;
+    border-bottom: 2px solid #cb218e;
+    border-left: 2px solid transparent;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}

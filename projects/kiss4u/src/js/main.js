@@ -48,12 +48,39 @@ $(function() {
       $('html, body').animate({
          scrollTop: $("body").offset().top
       }, 50);
-   });
+    });
     
     //Filter-Form
     $(".frm-a").click( function() {
       var el = $(this).attr("category");
       $(".pill-btn[id='pill-"+el+"']").click();
+      switch(el){
+        case "singin":
+          $("#modal-xl-content").removeClass("modal-xl");
+        break;
+        case "singup":
+          $("#modal-xl-content").addClass("modal-xl");
+        break;
+      }
+    });
+    $(".pill-btn").click( function () {
+      var el = $(this).attr("id");
+      switch(el){
+        case "pill-singin":
+        $(document).ready(function() {
+        setTimeout(function(){
+          $("#modal-xl-content").removeClass("modal-xl");
+        }, 150);
+        });
+        break;
+        case "pill-singup":
+        $(document).ready(function() {
+        setTimeout(function(){
+          $("#modal-xl-content").addClass("modal-xl");
+        }, 150);
+        });
+        break;
+      }
     });
 
     //Filter-SideNav

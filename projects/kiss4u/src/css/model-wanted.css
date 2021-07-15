@@ -9,7 +9,7 @@ Author:   RZ
 /*
 */
 /**********************************Content-Start**********************************/
-#introCarousel,
+.carousel.slide,
 .carousel-inner,
 .carousel-item,
 .carousel-item.active {
@@ -79,10 +79,10 @@ Author:   RZ
     }
 }
 @media (min-width: 992px) {
-    #introCarousel {
+    .carousel.slide {
         margin-top: -58.59px;
     }
-    #introCarousel,
+    .carousel.slide,
     .carousel-inner,
     .carousel-item,
     .carousel-item.active {

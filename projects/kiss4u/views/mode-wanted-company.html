@@ -20,7 +20,7 @@
         <link href="../src/css/rz-custom.css" media="all" rel="stylesheet" type="text/css">
         <link href="../src/font/fonts/fonts.css" media="all" rel="stylesheet" type="text/css">
         <link href="../src/css/style.css" media="all" rel="stylesheet" type="text/css">
-        <link href="../src/css/model-wanted.css" media="all" rel="stylesheet" type="text/css">
+        <link href="../src/css/model-wanted-company.css" media="all" rel="stylesheet" type="text/css">
         <!-- style end -->
         <!-- fonts start -->
         <link href="../src/font/fontpro/css/all.min.css" rel="stylesheet" type="text/css">
@@ -63,8 +63,8 @@
                                 </div>
                                 <div id="panelUser" class="accordion-collapse collapse" aria-labelledby="headUser"> 
                                     <ul class="sub-menu">
-                                        <li id="" class="menu-item"><a class="collapsible-header waves-effect" data-toggle="modal" data-target="#form-loginModel">Login</a></li>
-                                        <li id="" class="menu-item"><a class="collapsible-header waves-effect" href="../views/mode-wanted-single.html">Join Now</a></li>
+                                        <li id="" class="menu-item"><a category="singin" class="collapsible-header waves-effect frm-a" data-toggle="modal" data-target="#form-accModal">Login</a></li>
+                                        <li id="" class="menu-item"><a category="singup" class="collapsible-header waves-effect frm-a" data-toggle="modal" data-target="#form-accModal">Join Now</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -145,8 +145,8 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <a class="d-none d-md-block frm-a text-info align-self-center ml-2 auth-modal-toggle" style="color: #fff!important;" data-toggle="modal" data-target="#form-loginModel">Login</a>
-                                    <a class="d-none d-md-block frm-a btn btn-custom btn-rounded btn-sm waves-effect waves-light auth-modal-toggle" href="../views/mode-wanted-single.html">Join Now</a>
+                                    <a category="singin" alt="Sign In" class="d-none d-md-block frm-a text-info align-self-center ml-2 auth-modal-toggle" style="color: #fff!important;">Login</a>
+                                    <a category="singup" alt="Sign Up" class="d-none d-md-block frm-a btn btn-custom btn-rounded btn-sm waves-effect waves-light auth-modal-toggle">Join Now</a>
                                 </ul>
                             </span>
                         </div>
@@ -160,9 +160,9 @@
                                 <div class="d-flex justify-content-center align-items-center h-100">
                                     <div class="text-white text-center">
                                         <h1 class="my-2">Become a Kisses for You</h1>
-                                        <a class="btn btn-outline-custom btn-md m-2" href="../views/mode-wanted-single.html">Join Us</a>
+                                        <a class="btn btn-outline-custom btn-md m-2" href="#!" role="button">Join Us</a>
                                         <h5 class="my-2">Already have an Account?</h5>
-                                        <a class="btn btn-outline-custom btn-md m-2" data-toggle="modal" data-target="#form-loginModel">Login Here</a>
+                                        <a class="btn btn-outline-custom btn-md m-2" href="#!">Login Here</a>
                                     </div>
                                 </div>
                             </div>
@@ -206,7 +206,7 @@
                                         <p>1 Person</p>
                                         <p>You are your own Boss</p>
                                         <p>Work when you feel like it</p>
-                                        <a class="btn btn-custom" href="../views/mode-wanted-single.html">
+                                        <a class="btn btn-custom">
                                             <i class="fas fa-clone left"></i> Join Us
                                         </a>
                                     </div>
@@ -226,7 +226,7 @@
                                         <p>2 or more Person</p>
                                         <p>Manage Yourself and your Partner</p>
                                         <p>Manage a group of Models</p>
-                                        <a class="btn btn-custom" href="../views/mode-wanted-company.html">
+                                        <a class="btn btn-custom">
                                             <i class="fas fa-clone left"></i> Join Us
                                         </a>
                                     </div>
@@ -237,17 +237,15 @@
                 </div>
                 <div class="py-5 text-center prot-wrapper text-white">
                     <div class="overlay"></div>
-                    <div class="row my-5 w-100 super-center">
-                        <div class="col-12 col-md-3 mb-4 order-2 order-md-1">
+                    <h2>Kisses For You Protects You</h2>
+                    <p>kisses for you offers you the Best Protection</p>
+                    <p>Our country ban option blocks visitors from Your Country</p>
+                    <div class="row mt-5">
+                        <div class="col-12 col-md-6 mb-4">
                             <img class="icon-mc" src="../src/img/icos/MC/country.svg" alt="">
                             <p class="d-block" style="color: #fff;">Country Ban</p>
                         </div>
-                        <div class="col-12 col-md-5 mb-4 order-1 order-md-2">
-                            <h2>Kisses For You Protects You</h2>
-                            <p>kisses for you offers you the Best Protection</p>
-                            <p>Our country ban option blocks visitors from Your Country</p>
-                        </div>
-                        <div class="col-12 col-md-3 mb-4 order-3">
+                        <div class="col-12 col-md-6 mb-4">
                             <img class="icon-mc" src="../src/img/icos/MC/safe.svg" alt="">
                             <p class="d-block" style="color: #fff;">Safe, Secure and Discret</p>
                         </div>
@@ -255,7 +253,7 @@
                 </div>
                 <div id="carouselIntros" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active" style="background-image: url(../src/img/bg/AW-Banner.jpeg); background-position: center center;">
+                        <div class="carousel-item active" style="background-image: url(../src/img/bg/AW-Banner.jpg); background-position: center top;">
                             <div class="mask" style="background-image: url(../src/img/bg/star.png);">
                                 <div class="d-flex justify-content-center align-items-center h-100 w-100" style="background-color: rgba(0, 0, 0, 0.6); ">
                                     <div class="text-white text-center">
@@ -270,7 +268,7 @@
                 <div class="py-5 text-center prot-wrapper text-white">
                     <div class="overlay"></div>
                     <h2>Join our exclusive Cam Models</h2>
-                    <a class="btn btn-outline-custom btn-md m-2" href="../views/mode-wanted-single.html">Join Us</a>
+                    <a class="btn btn-outline-custom btn-md m-2" href="#!">Join Us</a>
                 </div>
             </div>
             
@@ -280,7 +278,7 @@
 
     </body>
     <!-- scripts start --> 
-    <script src="../src/js/model-wanted.js"></script>
+    <script src="../src/js/model-wanted-company.js"></script>
     <!-- scripts end -->
 
 </html>

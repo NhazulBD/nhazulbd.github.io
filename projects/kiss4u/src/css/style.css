@@ -163,12 +163,6 @@ Author:   RZ
 }
 
 /******************Buttons******************/
-.n-btn {
-    background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%)!important;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-}
 .btn-custom {
     font-size: .70rem!important;
     background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
@@ -182,9 +176,17 @@ Author:   RZ
     font-size: .70rem!important;
     border: 2px solid #6617cb;
     font-weight: bold;
-    background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%)!important;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #cb218e!important;
+    background-color:transparent;
+}
+.btn-outline-custom.focus,
+.btn-outline-custom:focus{
+    box-shadow:0 0 0 .2rem rgba(102, 23, 203,.5);
+}
+.btn-outline-custom:not(:disabled):not(.disabled).active:focus,
+.btn-outline-custom:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-custom.dropdown-toggle:focus{
+    box-shadow:0 0 0 .2rem rgba(102, 23, 203,.5);
 }
 .btn[class*=btn-outline-] {
     padding-top: .7rem;
@@ -253,6 +255,12 @@ Author:   RZ
 #btn-top.show {
     opacity: 1;
     visibility: visible;
+}
+.custom-text {
+    background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%)!important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
 /**********************************Main-End**********************************/
 

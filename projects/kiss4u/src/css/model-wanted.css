@@ -15,21 +15,7 @@ Author:   RZ
 .carousel-item.active {
     height: 100vh;
 }
-
-.carousel-item:nth-child(1) {
-    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.carousel-item:nth-child(2) {
-    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.carousel-item:nth-child(3) {
-    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
+.carousel-item {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -38,18 +24,69 @@ Author:   RZ
 .navbar .nav-link {
     color: #fff !important;
 }
+
+.btn-outline-custom {
+    border-color:#cb218e;
+    color: #fff!important;
+}
+.btn-outline-custom.focus,
+.btn-outline-custom:focus{
+    box-shadow:0 0 0 .2rem rgba(203, 33, 142,.5);
+}
+.btn-outline-custom:not(:disabled):not(.disabled).active:focus,
+.btn-outline-custom:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-custom.dropdown-toggle:focus{
+    box-shadow:0 0 0 .2rem rgba(203, 33, 142,.5);
+}
+
+.icon-mc {
+    width: 102px;
+    height: 95px;
+}
+
+.ben-wrapper, 
+.prot-wrapper {
+    background-attachment: fixed;
+    position: relative;
+    background-image: url(../img/bg/bg.jpg);
+}
+
+.ben-wrapper .overlay,
+.prot-wrapper .overlay {
+    background-image: linear-gradient(to bottom, #000000, #351421, #651b3f, #971f64, #cb218e);
+    background-color: transparent!important;
+    opacity: .2;
+    position: absolute!important;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.card.card-image {
+    position: relative;
+}
+
 /**********************************Content-End**********************************/
 
 /**********************************Responsive-Start**********************************/
+@media (max-width: 991px) {
+    .navbar.navbar-expand-lg {
+        position: absolute;
+        width: 100%;
+    }
+}
 @media (min-width: 992px) {
     #introCarousel {
-    margin-top: -58.59px;
+        margin-top: -58.59px;
     }
     #introCarousel,
     .carousel-inner,
     .carousel-item,
     .carousel-item.active {
-        height: 50vh;
+        height: 55vh;
     }
 }
 /**********************************Responsive-End**********************************/

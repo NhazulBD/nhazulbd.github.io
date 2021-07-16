@@ -159,6 +159,452 @@
                 <div id="form_container"></div>
                 <!-------------------------------------- form modals end -------------------------------------->
 
+                <div class="container-fluid px-5">
+
+                    <ul class="nav md-pills w-100 super-center ul-tabs mt-5">
+                        <li class="nav-item">
+                            <a id="aEmailModel" class="btn-floating btn-sm btn-pill active" data-toggle="tab" href="#emailmodel" role="tab" aria-controls="emailmodel" aria-selected="true"><i>1</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="aCategoryModel" class="btn-floating btn-sm btn-pill" data-toggle="tab" href="#categorymodel" role="tab" aria-controls="categorymodel" aria-selected="false"><i>2</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="aModelData" class="btn-floating btn-sm btn-pill" data-toggle="tab" href="#modeldata" role="tab" aria-controls="modeldata" aria-selected="false"><i>3</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="aPreferenceData" class="btn-floating btn-sm btn-pill" data-toggle="tab" href="#preferencedata" role="tab" aria-controls="preferencedata" aria-selected="false"><i>4</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="aIdentifyData1" class="btn-floating btn-sm btn-pill" data-toggle="tab" href="#identifydata1" role="tab" aria-controls="identifydata1" aria-selected="false"><i>5</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="aIdentifyData2" class="btn-floating btn-sm btn-pill" data-toggle="tab" href="#identifydata2" role="tab" aria-controls="identifydata2" aria-selected="false"><i>6</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="aFinishRegister" class="btn-floating btn-sm btn-pill" data-toggle="tab" href="#finishregister" role="tab" aria-controls="finishregister" aria-selected="false"><i>7</i></a>
+                        </li>
+                    </ul>
+                    
+                    <form id="registerModel" class="text-center w-100">
+                        <div class="tab-content pt-0">
+                    
+                            <!--Email Panel-->
+                            <div class="tab-pane fade in show active w-100" id="emailmodel" role="tabpanel">
+                                <h2 class="text-white mt-5 mb-4">Account Type</h2>
+
+                                <div id="categoryWrapper" class="row">
+                                    
+                                    <div class="col-12 col-md-6 col-lg-3 my-2 mx-auto">
+                                        <div id="cardtypeHetero" class="card typeCard hoverable h-100 z-depth-1" style="background-color: transparent;">
+                                            <div class="view overlay h-100" style="background-color: transparent;">
+                                                <a id="typeHetero">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                    <input type="radio" id="categoryRadios1" name="groupOfTypeRadios" value="Hetero">
+                                                </a>
+                                                <div class="text-white text-center super-center rgba-black-strong py-5 px-4" style="background-color: transparent;">
+                                                    <div>
+                                                        <h3 class="card-title pt-2">
+                                                            <strong>Hetero Couple</strong>
+                                                        </h3>
+                                                        <p>Manage yourself and your Partner</p>
+                                                        <p>Work when they feel like it</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3 my-2 mx-auto">
+                                        <div id="cardtypeGay" class="card typeCard hoverable h-100 z-depth-1" style="background-color: transparent;">
+                                            <div class="view overlay h-100" style="background-color: transparent;">
+                                                <a id="typeGay">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                    <input type="radio" id="categoryRadios2" name="groupOfTypeRadios" value="Gay">
+                                                </a>
+                                                <div class="text-white text-center super-center rgba-black-strong py-5 px-4" style="background-color: transparent;">
+                                                    <div>
+                                                        <h3 class="card-title pt-2">
+                                                            <strong>Gay Couple</strong>
+                                                        </h3>
+                                                        <p>Manage yourself and your Partner</p>
+                                                        <p>Work when they feel like it</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3 my-2 mx-auto">
+                                        <div id="cardtypeLesbian" class="card typeCard hoverable h-100 z-depth-1" style="background-color: transparent;">
+                                            <div class="view overlay h-100" style="background-color: transparent;">
+                                                <a id="typeLesbian">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                    <input type="radio" id="categoryRadios3" name="groupOfTypeRadios" value="Lesbian">
+                                                </a>
+                                                <div class="text-white text-center super-center rgba-black-strong py-5 px-4" style="background-color: transparent;">
+                                                    <div>
+                                                        <h3 class="card-title pt-2">
+                                                            <strong>Lesbian Couple</strong>
+                                                        </h3>
+                                                        <p>Manage yourself and your Partner</p>
+                                                        <p>Work when they feel like it</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3 my-2 mx-auto">
+                                        <div id="cardtypeStudio" class="card typeCard hoverable h-100 z-depth-1" style="background-color: transparent;">
+                                            <div class="view overlay h-100" style="background-color: transparent;">
+                                                <a id="typeStudio">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                    <input type="radio" id="categoryRadios4" name="groupOfTypeRadios" value="Studio">
+                                                </a>
+                                                <div class="text-white text-center super-center rgba-black-strong py-5 px-4" style="background-color: transparent;">
+                                                    <div>
+                                                        <h3 class="card-title pt-2">
+                                                            <strong>Studio Account</strong>
+                                                        </h3>
+                                                        <p>2 or more person</p>
+                                                        <p>Manage a group of models</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+
+                                <button category="aCategoryModel" type="button" class="btn btn-outline-custom btn-md waves-effect waves-light mt-5 btn-nextpill">Next</button>
+                            </div>
+                            <!--/.Email Panel-->
+                                
+                            <!--Category Panel-->
+                            <div class="tab-pane fade w-100" id="categorymodel" role="tabpanel">
+                                <h2 class="text-white mt-5 mb-4">Category Model</h2>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4 mx-auto my-2">
+                                        <div class="md-form">
+                                            <input type="email" id="modelemail" class="form-control" name="modelemail">
+                                            <label for="modelemail">E-mail</label>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="col-12 col-md-6 col-lg-4 mx-auto my-2">
+                                        <div class="md-form">
+                                            <input type="password" id="modelpassword" class="form-control" name="modelpassword">
+                                            <label for="modelpassword">Password</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 mx-auto my-2">
+                                        <div class="md-form">
+                                            <input type="password" id="modelpassword2" class="form-control" name="modelpassword2">
+                                            <label for="modelpassword2">Repeat Password</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button category="aModelData" type="button" class="btn btn-outline-custom btn-md waves-effect waves-light mt-5 btn-nextpill">Next</button>
+                            </div>
+                            <!--/.Category Panel-->
+                    
+                            <!--Data Panel-->
+                            <div class="tab-pane fade w-100" id="modeldata" role="tabpanel">
+                                <h2 class="text-white mt-5 mb-4">Personal Data</h2>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-5 col-xl-3 mx-auto">
+                                        <div class="md-form px-0">
+                                            <input style="pointer-events: none;padding-bottom: 1.1rem;" type="text" id="dateOfBirth" name="dateOfBirth" class="form-control datepicker" required />
+                                            <label style="cursor: pointer;" for="dateOfBirth">Date of Birth <i class="far fa-calendar-alt"></i></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 col-xl-3 mx-auto">
+                                        <div id="selectGender" class="px-0">
+                                            <select class="rz-select md-form">
+                                                <option value="" disabled selected>Gender</option>
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 col-xl-3 mx-auto">
+                                        <div id="selectCountry" class="px-0">
+                                            <select class="rz-select md-form">
+                                                <option value="" disabled selected>Country</option>
+                                                <option value="country">Country#1</option>
+                                                <option value="country">Country#2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 col-xl-3 mx-auto">
+                                        <div id="selectNationality" class="px-0">
+                                            <select class="rz-select md-form">
+                                                <option value="" disabled selected>Nacionality</option>
+                                                <option value="nacionality1">Nacionality#1</option>
+                                                <option value="nacionality2">Nacionality#2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 col-xl-3 mx-auto">
+                                        <div id="selectRegion" class="px-0">
+                                            <select class="rz-select md-form">
+                                                <option value="" disabled selected>Region</option>
+                                                <option value="europe">Europe</option>
+                                                <option value="sAmerica">South America</option>
+                                                <option value="asia">Asia</option>
+                                                <option value="nAmerica">North America</option>
+                                                <option value="oceania">Oceania</option>
+                                                <option value="africa">Africa</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button category="aPreferenceData" type="button" class="btn btn-outline-custom btn-md waves-effect waves-light mt-5 btn-nextpill">Next</button>
+                            </div>
+                            <!--/.Data Panel-->
+    
+                            <!--Preference Panel-->
+                            <div class="tab-pane fade text-center w-100" id="preferencedata" role="tabpanel">
+                                <h2 class="text-white mt-5 mb-4">Preference Data</h2>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-5 col-xl-3 mx-auto">
+                                        <div id="selectConsent">
+                                            <select class="rz-select md-form" multiple>
+                                                <option value="" disabled selected>Consent</option>
+                                                <option value="dominan">Dominan</option>
+                                                <option value="fingering">Fingering</option>
+                                                <option value="closeUp">Close Up</option>
+                                                <option value="sexToys">Sex Toys</option>
+                                                <option value="dancing">Dancing</option>
+                                                <option value="submissive">Submissive</option>
+                                                <option value="striptease">Striptease</option>
+                                                <option value="analSex">Anal Sex</option>
+                                                <option value="squirt">Squirt</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 col-xl-3 mx-auto">
+                                        <div id="selectAspect">
+                                            <select class="rz-select md-form" multiple>
+                                                <option value="" disabled selected>Aspect</option>
+                                                <option value="petite">Petite</option>
+                                                <option value="piercing">Piercing</option>
+                                                <option value="stockings">Stockings</option>
+                                                <option value="tatto">Tatto</option>
+                                                <option value="shaved">Shaved</option>
+                                                <option value="hairyPussy">Hairy Pussy</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 col-xl-3 mx-auto">
+                                        <div id="selectBreast">
+                                            <select class="rz-select md-form">
+                                                <option value="" disabled selected>Breast Size</option>
+                                                <option value="tiny">Tiny</option>
+                                                <option value="normal">Normal</option>
+                                                <option value="big">Big</option>
+                                                <option value="huge">Huge</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 col-xl-3 mx-auto">
+                                        <div id="selectHair">
+                                            <select class="rz-select md-form" multiple>
+                                                <option value="" disabled selected>Hair</option>
+                                                <option value="black">Black</option>
+                                                <option value="blonde">Blonde</option>
+                                                <option value="brunette">Brunette</option>
+                                                <option value="redhead">Redhead</option>
+                                                <option value="long">Long</option>
+                                                <option value="short">Short</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 col-xl-3 mx-auto">
+                                        <div id="selectLangModel">
+                                            <select class="rz-select md-form" multiple>
+                                                <option value="" disabled selected>Language</option>
+                                                <option value="english">English</option>
+                                                <option value="french">French</option>
+                                                <option value="spanish">Spanish</option>
+                                                <option value="italian">Italian</option>
+                                                <option value="german">German</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button category="aIdentifyData1" type="button" class="btn btn-outline-custom btn-md waves-effect waves-light mt-5 btn-nextpill">Next</button>
+                            </div>
+                            <!--/.Preference Panel-->
+    
+                            <!--Identify Panel 1-->
+                            <div class="tab-pane fade text-center w-100" id="identifydata1" role="tabpanel">
+                                <h2 class="text-white mt-5 mb-4">Identify Data</h2>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-5 col-xl-4 mx-auto">
+                                        <div id="selectIdType">
+                                            <select class="rz-select md-form">
+                                                <option value="" disabled selected>ID Type</option>
+                                                <option value="tiny">ID Card</option>
+                                                <option value="normal">Passport</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-5 col-xl-4 mx-auto">
+                                        <div class="md-form">
+                                            <input type="text" id="idNumber" class="form-control" name="idNumber">
+                                            <label for="idNumber">ID Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5 col-xl-4 mx-auto">
+                                        <div class="md-form px-0">
+                                            <input style="pointer-events: none;padding-bottom: 1.1rem;" type="text" id="dateOfExpiration" name="dateOfExpiration" class="form-control datepicker" required />
+                                            <label style="cursor: pointer;" for="dateOfExpiration">Date of Expiration <i class="far fa-calendar-alt"></i></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button category="aIdentifyData2" type="button" class="btn btn-outline-custom btn-md waves-effect waves-light mt-5 btn-nextpill">Next</button>
+                            </div>
+                            <!--/.Identify Panel 1-->
+    
+                            <!--Identify Panel 2-->
+                            <div class="tab-pane fade text-center w-100" id="identifydata2" role="tabpanel">
+                                <h2 class="text-white mt-5 mb-4">Identify Data</h2>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-4 mx-auto">
+                                        <div class="card" style="background-color: rgba(0,0,0,.25);">
+                                            <div class="card-body">
+                                                <div class="text-center">
+                                                    <div class="popover__wrapper">
+                                                        <a>
+                                                            <h5 class="popover__title">Front ID <i class="far fa-exclamation-circle"></i></h5>
+                                                        </a>
+                                                        <div class="popover__content">
+                                                            <p class="popover__message small"><strong>Front ID</strong></p>
+                                                            <p class="popover__message small">
+                                                                MAXIMUM FILE SIZE ?
+                                                                <br>
+                                                                SUPPORT FORMATS: JPG - JPEG - PNG - BMP ?
+                                                            </p>
+                                                            <img class="w-50" src="../src/img/icos/MC/frontid.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="super-center w-100">
+                                                    <div class="position-relative">
+                                                        <div class="file-field">
+                                                            <div class="btn btn-custom btn-sm">
+                                                                <span>Choose file</span>
+                                                                <input type="file" name="idFront" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img class="card-img-top" src="#" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mx-auto">
+                                        <div class="card" style="background-color: rgba(0,0,0,.25);">
+                                            <div class="card-body">
+                                                <div class="text-center">
+                                                    <div class="popover__wrapper">
+                                                        <a>
+                                                            <h5 class="popover__title">Back ID <i class="far fa-exclamation-circle"></i></h5>
+                                                        </a>
+                                                        <div class="popover__content">
+                                                            <p class="popover__message small"><strong>Back ID</strong></p>
+                                                            <p class="popover__message small">
+                                                                MAXIMUM FILE SIZE ?
+                                                                <br>
+                                                                SUPPORT FORMATS: JPG - JPEG - PNG - BMP ?
+                                                            </p>
+                                                            <img class="w-50" src="../src/img/icos/MC/backid.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="super-center w-100">
+                                                    <div class="position-relative">
+                                                        <div class="file-field">
+                                                            <div class="btn btn-custom btn-sm">
+                                                                <span>Choose file</span>
+                                                                <input type="file" name="idBack" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img class="card-img-top" src="#" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mx-auto">
+                                        <div class="card" style="background-color: rgba(0,0,0,.25);">
+                                            <div class="card-body">
+                                                <div class="text-center">
+                                                    <div class="popover__wrapper">
+                                                        <a>
+                                                            <h5 class="popover__title">Face and ID<i class="far fa-exclamation-circle"></i></h5>
+                                                        </a>
+                                                        <div class="popover__content">
+                                                            <p class="popover__message small"><strong>Face and ID</strong></p>
+                                                            <p class="popover__message small">
+                                                                MAXIMUM FILE SIZE ?
+                                                                <br>
+                                                                SUPPORT FORMATS: JPG - JPEG - PNG - BMP ?
+                                                            </p>
+                                                            <img class="w-50" src="../src/img/icos/MC/faceid.jpg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="super-center w-100">
+                                                    <div class="position-relative">
+                                                        <div class="file-field">
+                                                            <div class="btn btn-custom btn-sm">
+                                                                <span>Choose file</span>
+                                                                <input type="file" name="faceID" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img class="card-img-top" src="#" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button category="aFinishRegister" type="button" class="btn btn-outline-custom btn-md waves-effect waves-light mt-5 btn-nextpill">Next</button>
+                            </div>
+                            <!--/.Identify Panel 2-->
+
+                            <!--Identify Panel 2-->
+                            <div class="tab-pane fade text-center w-100" id="finishregister" role="tabpanel">
+                                <h2 class="text-white mt-5 mb-4">Finish</h2>
+
+                                <div class="grey-text h4">
+                                    Thank You For Contacting Us!
+                                    <br>
+                                    Your Documents Must Be Reviewed Before Approval
+                                    <br>
+                                    We Will Get In Touch With You Very Soon
+                                </div>
+
+                                <button type="button" class="btn btn-outline-custom btn-md waves-effect waves-light mt-5">Finish</button>
+                            </div>
+                            <!--/.Identify Panel 2-->
+                        
+                        </div>
+                    </form>
+
+                </div>
+
             </div>
             
         </div>

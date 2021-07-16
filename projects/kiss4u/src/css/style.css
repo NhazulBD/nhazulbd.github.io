@@ -123,10 +123,14 @@ Author:   RZ
 }
 
 /******************Form******************/
-.md-form input[type="email"]:focus:not([readonly]) + label, .md-form input[type="password"]:focus:not([readonly]) + label {
+.md-form input[type="text"]:focus:not([readonly]) + label, 
+.md-form input[type="email"]:focus:not([readonly]) + label, 
+.md-form input[type="password"]:focus:not([readonly]) + label {
     color: #cb218e;
 }
-.md-form input[type="email"]:focus:not([readonly]), .md-form input[type="password"]:focus:not([readonly]) {
+.md-form input[type="text"]:focus:not([readonly]), 
+.md-form input[type="email"]:focus:not([readonly]), 
+.md-form input[type="password"]:focus:not([readonly]) {
     -webkit-box-shadow: 0 1px 0 0 #cb218e;
     box-shadow: 0 1px 0 0 #cb218e;
     border-bottom: 1px solid #cb218e;
@@ -145,6 +149,27 @@ Author:   RZ
 }
 .btn-floating.btn-sm i {
     line-height: 30px;
+}
+.overvideo {
+    z-index: 1000;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+.picker__box .picker__header .picker__date-display {
+    background-color: #cb218e;
+}
+.picker__box .picker__header .picker__date-display .picker__weekday-display,
+.picker__box .picker__table .picker--focused, 
+.picker__box .picker__table .picker__day--selected, 
+.picker__box .picker__table .picker__day--selected:hover {
+    background-color: #911766;
+}
+.picker__box .picker__table .picker__day.picker__day--today {
+    color: #cb218e;
 }
 /******************Dropdown******************/
 .dropdown-menu {
@@ -167,10 +192,6 @@ Author:   RZ
     font-size: .70rem!important;
     background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
     color: #fff!important;
-}
-.btn-custom.lock {
-    background-image: none;
-    background-color: transparent;
 }
 .btn-outline-custom {
     font-size: .70rem!important;
@@ -201,6 +222,18 @@ Author:   RZ
 #btn-top.btn-floating i {
     line-height: 47px!important;
     width: inherit!important;
+}
+.btn-pill {
+    font-size: .70rem!important;
+    background-color: rgba(102, 23, 203,.3);
+    background-image: none;
+    color: #fff!important;
+}
+.btn-pill.active {
+    font-size: .70rem!important;
+    background-color: transparent;
+    background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+    color: #fff!important;
 }
 /******************Scroll-Bar******************/
 .custom-scroll {

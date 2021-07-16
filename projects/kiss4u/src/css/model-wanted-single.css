@@ -9,8 +9,13 @@ Author:   RZ
 /*
 */
 /**********************************Content-Start**********************************/
-
-
+.categoryCard .view{
+    border: 2px solid rgba(203, 33, 142,.25);
+}
+.categoryCard.active .view{
+    background-image: linear-gradient(315deg, rgba(102, 23, 203,.25) 0%, rgba(203, 33, 142,.25) 74%);
+    border: 2px solid transparent;
+}
 /**********************************Content-End**********************************/
 
 /**********************************Responsive-Start**********************************/

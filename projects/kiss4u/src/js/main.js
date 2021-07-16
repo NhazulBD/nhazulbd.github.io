@@ -20,6 +20,8 @@ $(function() {
     //RZ-Start
     $('.rz-select').material_select('destroy');
     $('.rz-select').material_select();
+    $('.timepicker').pickatime();
+    $('.datepicker').pickadate();
     $('.hiddendiv.common').remove();
     
     //Side-Nav
@@ -111,17 +113,4 @@ $(function() {
       }
     });
 
-    $(".ul-tabs.nav a.lock").click(function (){
-      $(".ul-tabs.nav a.btn-custom").addClass("lock");
-      $(this).removeClass("lock");
-    });
-    $("#atab1, #atabModel1").removeClass("lock");
-    
-    $("#form-accModal, #form-modelModal").on('hidden.bs.modal', function(){
-      $(".ul-tabs.nav a.btn-custom").addClass("lock");
-      $("#atab1, #atabModel1").addClass("btn-custom");
-      $("#atab1, #atabModel1").removeClass("lock");
-      $(".tab-pane.fade.w-100").removeClass("in show active");
-      $("#payment1, #model1").addClass("in show active");
-    });
 }); 

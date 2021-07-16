@@ -28,6 +28,7 @@
         <!-- fonts end -->
         <script src="../src/js/rz-jq.js"></script>
         <script>
+            $(document).ready(function () {$('#form_container').load('loginmodel.html');});
             $(document).ready(function () {$('#footer_container').load('footer.html');});
         </script>
 
@@ -63,8 +64,8 @@
                                 </div>
                                 <div id="panelUser" class="accordion-collapse collapse" aria-labelledby="headUser"> 
                                     <ul class="sub-menu">
-                                        <li id="" class="menu-item"><a category="singin" class="collapsible-header waves-effect frm-a" data-toggle="modal" data-target="#form-accModal">Login</a></li>
-                                        <li id="" class="menu-item"><a category="singup" class="collapsible-header waves-effect frm-a" data-toggle="modal" data-target="#form-accModal">Join Now</a></li>
+                                        <li id="" class="menu-item"><a class="collapsible-header waves-effect" data-toggle="modal" data-target="#form-loginModel">Login</a></li>
+                                        <li id="" class="menu-item"><a class="collapsible-header waves-effect" href="../views/mode-wanted-single.html">Join Now</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -96,7 +97,7 @@
             <div id="content">
 
                 <!-------------------------------------- navbar start -------------------------------------->
-                <nav class="navbar navbar-expand-lg navbar-dark d-block pt-0" style="z-index: 200;">
+                <nav class="navbar navbar-expand-md navbar-dark unique-color-dark double-nav scrolling-navbar top-nav-collapse" style="z-index: 200;">
                     <div class="container-fluid">
                         <div class="float-left">
                             <a id="slide-in" style="color: #cb218e!important;" class="button-collapse">
@@ -145,131 +146,19 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <a category="singin" alt="Sign In" class="d-none d-md-block frm-a text-info align-self-center ml-2 auth-modal-toggle" style="color: #fff!important;">Login</a>
-                                    <a category="singup" alt="Sign Up" class="d-none d-md-block frm-a btn btn-custom btn-rounded btn-sm waves-effect waves-light auth-modal-toggle">Join Now</a>
+                                    <a class="d-none d-md-block frm-a text-info align-self-center ml-2 auth-modal-toggle" style="color: #fff!important;" data-toggle="modal" data-target="#form-loginModel">Login</a>
+                                    <a class="d-none d-md-block frm-a btn btn-custom btn-rounded btn-sm waves-effect waves-light auth-modal-toggle" href="../views/mode-wanted-single.html">Join Now</a>
                                 </ul>
                             </span>
                         </div>
                     </div>
                 </nav>
                 <!-------------------------------------- navbar end -------------------------------------->
-                <div id="carouselIntro" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" style="background-image: url(../src/img/bg/MC-Banner.jpg);">
-                            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-                                <div class="d-flex justify-content-center align-items-center h-100">
-                                    <div class="text-white text-center">
-                                        <h1 class="my-2">Become a Kisses for You</h1>
-                                        <a class="btn btn-outline-custom btn-md m-2" href="#!" role="button">Join Us</a>
-                                        <h5 class="my-2">Already have an Account?</h5>
-                                        <a class="btn btn-outline-custom btn-md m-2" href="#!">Login Here</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="py-5 text-center ben-wrapper text-white">
-                    <div class="overlay"></div>
-                    <h2 style="color: #fff;">You have Fun and Earn</h2>
-                    <div class="row mt-5">
-                        <div class="col-12 col-md-6 col-lg-3 mb-4">
-                            <img class="icon-mc" src="../src/img/icos/MC/clock.svg" alt="">
-                            <p class="d-block" style="color: #fff;">You decide when to Work</p>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 mb-4">
-                            <img class="icon-mc" src="../src/img/icos/MC/conversation.svg" alt="">
-                            <p class="d-block" style="color: #fff;">Fun Conversation</p>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 mb-4">
-                            <img class="icon-mc" src="../src/img/icos/MC/pay.svg" alt="">
-                            <p class="d-block" style="color: #fff;">Payout every two Weeks</p>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <img class="icon-mc" src="../src/img/icos/MC/live.svg" alt="">
-                            <p class="d-block" style="color: #fff;">24/7 Live Support</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid px-0">
-                    <div class="row">
-                        <div class="col-12 col-md-6 px-0">
-                            <div class="card card-image" style="background-image: url(../src/img/bg/single-bg.jpg);">
-                                <div class="text-white text-center super-center rgba-black-strong py-5 px-4">
-                                    <div>
-                                        <h5 class="custom-text">
-                                            <i class="fas fa-user fa-2x"></i> 
-                                        </h5>
-                                        <h3 class="card-title pt-2">
-                                            <strong>Single Account</strong>
-                                        </h3>
-                                        <p>1 Person</p>
-                                        <p>You are your own Boss</p>
-                                        <p>Work when you feel like it</p>
-                                        <a class="btn btn-custom">
-                                            <i class="fas fa-clone left"></i> Join Us
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 px-0">
-                            <div class="card card-image" style="background-image: url(../src/img/bg/company-bg.jpg);">
-                                <div class="text-white text-center super-center rgba-black-strong py-5 px-4">
-                                    <div>
-                                        <h5 class="custom-text">
-                                            <i class="fas fa-users fa-2x""></i> 
-                                        </h5>
-                                        <h3 class="card-title pt-2">
-                                            <strong>Studio Account</strong>
-                                        </h3>
-                                        <p>2 or more Person</p>
-                                        <p>Manage Yourself and your Partner</p>
-                                        <p>Manage a group of Models</p>
-                                        <a class="btn btn-custom">
-                                            <i class="fas fa-clone left"></i> Join Us
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="py-5 text-center prot-wrapper text-white">
-                    <div class="overlay"></div>
-                    <h2>Kisses For You Protects You</h2>
-                    <p>kisses for you offers you the Best Protection</p>
-                    <p>Our country ban option blocks visitors from Your Country</p>
-                    <div class="row mt-5">
-                        <div class="col-12 col-md-6 mb-4">
-                            <img class="icon-mc" src="../src/img/icos/MC/country.svg" alt="">
-                            <p class="d-block" style="color: #fff;">Country Ban</p>
-                        </div>
-                        <div class="col-12 col-md-6 mb-4">
-                            <img class="icon-mc" src="../src/img/icos/MC/safe.svg" alt="">
-                            <p class="d-block" style="color: #fff;">Safe, Secure and Discret</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="carouselIntros" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" style="background-image: url(../src/img/bg/AW-Banner.jpg); background-position: center top;">
-                            <div class="mask" style="background-image: url(../src/img/bg/star.png);">
-                                <div class="d-flex justify-content-center align-items-center h-100 w-100" style="background-color: rgba(0, 0, 0, 0.6); ">
-                                    <div class="text-white text-center">
-                                        <h3 class="my-2">We award our models every week based on the vote of Uur Customers</h3>
-                                        <h5 class="my-2">5000$ For the Best 50 Models</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="py-5 text-center prot-wrapper text-white">
-                    <div class="overlay"></div>
-                    <h2>Join our exclusive Cam Models</h2>
-                    <a class="btn btn-outline-custom btn-md m-2" href="#!">Join Us</a>
-                </div>
+
+                <!-------------------------------------- form modals start -------------------------------------->
+                <div id="form_container"></div>
+                <!-------------------------------------- form modals end -------------------------------------->
+
             </div>
             
         </div>

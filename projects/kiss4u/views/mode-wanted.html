@@ -28,6 +28,7 @@
         <!-- fonts end -->
         <script src="../src/js/rz-jq.js"></script>
         <script>
+            $(document).ready(function () {$('#form_container').load('loginmodel.html');});
             $(document).ready(function () {$('#footer_container').load('footer.html');});
         </script>
 
@@ -153,6 +154,11 @@
                     </div>
                 </nav>
                 <!-------------------------------------- navbar end -------------------------------------->
+
+                <!-------------------------------------- form modals start -------------------------------------->
+                <div id="form_container"></div>
+                <!-------------------------------------- form modals end -------------------------------------->
+
                 <div id="carouselIntro" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" style="background-image: url(../src/img/bg/MC-Banner.jpg);">

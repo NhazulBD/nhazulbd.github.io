@@ -123,6 +123,9 @@ Author:   RZ
 }
 
 /******************Form******************/
+.md-form label {
+    color: #fff;
+}
 .md-form input[type="text"]:focus:not([readonly]) + label, 
 .md-form input[type="email"]:focus:not([readonly]) + label, 
 .md-form input[type="password"]:focus:not([readonly]) + label {
@@ -170,6 +173,12 @@ Author:   RZ
 }
 .picker__box .picker__table .picker__day.picker__day--today {
     color: #cb218e;
+}
+.md-form input[type="text"].form-control,
+.md-form input[type="email"].form-control,
+.md-form input[type="password"].form-control {
+    padding: .3rem 0 .55rem 0;
+    padding-bottom: 1.1rem;
 }
 /******************Dropdown******************/
 .dropdown-menu {
